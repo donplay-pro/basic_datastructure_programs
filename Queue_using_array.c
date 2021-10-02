@@ -14,7 +14,7 @@ struct queue *create(unsigned capacity)
 struct queue *Queue=(struct queue*)malloc(sizeof(struct queue));
 Queue->capacity=capacity;
 Queue->front=Queue->size=0;
-Queue->rear=capacity-1;
+Queue->rear=capacity-2;
 Queue->array=(int*)malloc(capacity*sizeof(int));
 return Queue;
 }
